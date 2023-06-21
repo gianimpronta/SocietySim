@@ -1,6 +1,12 @@
+import random
+
+from utils import locais_ficticios
+
+
 class Local:
-    def __init__(self, nome, recursos, economia, qualidade_saude, qualidade_educacao, expectativa_vida, qualidade_vida, empregos_disponiveis):
-        self.nome = nome
+    def __init__(self, recursos, economia, qualidade_saude, qualidade_educacao, expectativa_vida, qualidade_vida,
+                 empregos_disponiveis):
+        self.nome = random.choice(locais_ficticios)
         self.recursos = recursos  # Dicionário que inclui a disponibilidade de recursos como alimentos, água, etc.
         self.economia = economia  # Valor numérico representando a força da economia local
         self.qualidade_saude = qualidade_saude  # Valor numérico representando a qualidade do serviço de saúde
@@ -24,9 +30,12 @@ class Local:
 
     def consumir_recurso(self, recurso, quantidade):
         # Implementar lógica para consumir uma quantidade de um recurso específico
+        pass
 
     def adicionar_recurso(self, recurso, quantidade):
         # Implementar lógica para adicionar uma quantidade de um recurso específico
+        pass
 
     def atualizar(self):
         # Implementar lógica para atualizar o local com base em eventos, mudanças na população, etc.
+        pass
